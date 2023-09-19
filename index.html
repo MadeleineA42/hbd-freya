@@ -3,10 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: {
+                // 'smokin': ['Smokum', 'cursive'],
+                'ultra': ['Ultra', 'serif'],
+              },
+              colors: {
+              }
+            }
+          }
+        };
+      </script>
     <title>Click page</title>
 </head>
-<body>
-    
+<body class="bg-cover bg-fixed" style='background-image: url("./images/jason-leung-Xaanw0s0pMk-unsplash.jpg")'>
+<div class="flex flex-col justify-center items-center">
+    <h1 class="font-ultra text-6xl text-blue-300">HAPPY</h1>
+    <h1 class="font-ultra text-7xl text-violet-400">BIRTHDAY</h1>
+    <h1 class="font-ultra text-8xl text-pink-400">FREYA</h1>
+</div>
 </body>
 </html>
